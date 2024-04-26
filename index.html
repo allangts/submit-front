@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./submit.js"></script>
+
+  <title>Supernova</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-image">
+      <video width="1080" height="1920" muted autoplay loop>
+        <source src="explosion.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="form sb-hidden">
+      <form action="#"  id="idea-form" enctype="multipart/form-data">
+        <div class="form-header">
+          <h1 class="title">
+            Construa sua startup com a Supernova
+          </h1>
+          <!-- <img id="title-image" src="logo-peq.png" alt=""> -->
+        </div>
+          <div class="input-group">
+
+            <div class="input-box">
+              <label for="name">Nome Completo</label>
+              <input id="name" type="text" name="name" placeholder="Digite seu nome completo" required> 
+            </div>
+              <div class="input-box">
+                <label for="email">Endereço de e-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite seu e-mail" required> 
+              </div>
+              <div class="input-box">
+                <label for="whatsapp">WhatsApp</label>
+                <input id="whatsapp" type="tel" name="whatsapp" maxlength="15" placeholder="Digite seu número do WhatsApp" required> 
+              </div>
+              <div class="input-box" id="idea-container">
+                <label for="idea">Descreva sua ideia</label>
+                <textarea id="idea" name="idea" rows="4" placeholder="Descreva como sua ideia pode ser valiosa para alguém"></textarea>
+              </div>
+              <div class="input-box" id="current-phase-container">
+                <label for="current-phase">Fase atual da ideia</label>
+                <select id="current-phase" name="current-phase">
+                  <option value="conceito">Conceito</option>
+                  <option value="mvp">Produto Mínimo Viável</option>
+                  <option value="market">Lançado no mercado</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="checkbox-container">
+                  <input class="checkbox" id="dev" type="checkbox" name="dev">
+                  <label for="dev">Não tenho uma ideia. Quero ajudar no desenvolvimento de uma das ideias selecionadas.</label>
+                </div>
+              </div>
+            <div class="submit" >
+              <p id="fill-fields">*Preencha todos os campos.</p>
+              <button id="submit" class="button-53" type="submit">Vamos nessa!</button>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
