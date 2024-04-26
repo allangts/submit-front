@@ -52,12 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitButton = document.getElementById("submit");
   submitButton.addEventListener("click", async (event) => {
     event.preventDefault();
-    if (!validateForm()) {
-      document.getElementById("fill-fields").style.display = "flex";
-    } else {
-      document.getElementById("fill-fields").style.display = "none";
-      await submit();
-    }
+    window.location.href = "https://forms.gle/7gGQdrK7cWAEHr2TA";
   });
 
   const handlePhone = (event) => {
